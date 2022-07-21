@@ -73,7 +73,7 @@ const Dashboard = () => {
                                         {data.filter((val)=>{
                                           if (searchTerm === "") {
                                             return val
-                                          } else if (val.type.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+                                          } else if (val.file_name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
                                             return val
                                           }
                                         }).map((val, key) => {
